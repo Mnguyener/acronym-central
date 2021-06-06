@@ -1,4 +1,5 @@
 def main():
+    while True:
      user_input = input("Please type in an acronym of a weekday: ")
 
      user_input = user_input.lower()
@@ -17,6 +18,11 @@ def main():
          print("Laugh Out Loud")
      else:
          print("Incorrect acronym")
+
+     user_input = input("Do you want to search again? If not, type 'no'. ")
+     user_input = user_input.lower()
+     if user_input == "no":
+        break
 
 
 if __name__ == "__main__":
